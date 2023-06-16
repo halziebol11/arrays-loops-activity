@@ -13,6 +13,12 @@
 // 2. board games
 // 3. painting
 // Total hobbies: 3
+var array1 = ["lifting", "hiking", "swimming"]
+var hobbies = 0
+for (let i = 0; i<array1.length; i++ ) {
+    console.log(array1[i])
+};
+console.log(array1.length-1)
 
 /**
  * #2 Colors
@@ -29,6 +35,15 @@
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
+var array2 = ["teal", "teal", "green", "teal"]
+var tealCount = 0
+for (let i=0; i<array2.length; i++) {
+    if (array2[i] ="teal") {
+        tealCount ++;
+    }
+};
+console.log(array2);
+console.log(tealCount);
 
 
 /**
@@ -46,7 +61,20 @@
 // 3, 7, 2, 8, 11, 4, 2
 // Odd 3, 7, 11
 // Even 2, 8, 4, 2
-
+var array3 = [2,5,7,9,8,2,3,4];
+var arrayEven = [];
+var arrayOdd = [];
+for (let i=0; i<array3.length; i++) {
+    if (array3[i] %2 == 0){
+        arrayEven.push(array3[i])
+    }
+    else {
+        arrayOdd.push(array3[i])
+    }
+    };
+console.log(array3);
+console.log(arrayEven);
+console.log(arrayOdd);
 
 /**
  * #4 Flipping Switches
@@ -61,7 +89,13 @@
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
-
+var array4 = [true, false, true, false, false];
+var arrayToggled = [];
+for (let i=0; i<array4.length; i++) {
+    arrayToggled.push(!array4[i])
+};
+console.log(array4);
+console.log(arrayToggled);
 
 /**
  * #5 (STRETCH) Remove 0's
@@ -77,7 +111,17 @@
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
-
+var array5 = [0, 1, 5, 0, 0, 0]
+var lastIndex = 0;
+for (let i = (array5.length-1); i>0; i--){
+    if (array5[i] == 0){
+        array5.pop()
+    }
+    else {
+        break
+    }
+}
+console.log(array5)
 
 /**
  * #6 (STRETCH) Greatest Position Distance
